@@ -132,6 +132,8 @@ input[type=checkbox] {
   zoom: 1.5;
 }
 
+/* 버튼 css */
+
 .buttons {
   padding: 50px 0;
   display: flex;
