@@ -257,7 +257,22 @@ main {
 
 .sub-title1 ul{
   display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
 }
+
+.sub-title1 ul li {
+  color: #202020;
+}
+
+.sub-title1 ul li.active {
+  background-color: #2a6bcd;
+  color: #fff;
+  padding: 15px;
+  border-radius: 30px;
+}
+
 
 .m-img {
   width: 100%;
