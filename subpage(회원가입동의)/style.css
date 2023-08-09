@@ -79,7 +79,60 @@ a {
 
 /* main css */
 
+main {
+  width: 1240px;
+  margin: 0 auto;
+}
 
+.title {
+  text-align: center;
+  padding: 45px 0;
+}
+
+.title1 {
+  font-size: 30px;
+  color: #222222;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.title2 {
+  font-size: 16px;
+  color: #494949;
+}
+
+.agree {
+  border-bottom: 1px dotted #d0d0d0;
+}
+
+.agree > p {
+  padding: 20px 0;
+  font-size: 22px;
+  color: #222222;
+  font-weight: 600;
+}
+
+.text-box {
+  width: 1240px;
+  height: 250px;
+  overflow-y: scroll;
+  border: 1px solid #dbdbdb;
+  padding: 20px;
+  color: #666;
+}
+
+.agree label {
+  display: block;
+  padding: 20px 0;
+  color: #444444;
+  text-align: end;
+}
+
+.buttons {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
 
 
 /* footer css */
