@@ -67,7 +67,6 @@ a {
   background-color: #cacaca;
 }
 
-
 .home-btn img{
   position: absolute;
   top: 50%;
@@ -132,6 +131,23 @@ main {
   padding: 50px 0;
   display: flex;
   justify-content: center;
+}
+
+.buttons button {
+  width: 100px;
+  height: 45px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+
+#submit {
+  background-color: #2d2b2b;
+}
+
+#main {
+  background-color: #76777E;
 }
 
 
