@@ -396,6 +396,7 @@ main {
 .slide-imgs img {
   width: 650px;
   height: 400px;
+  /* transform: translateX(-650px); */
 }
 
 .buttons {
@@ -473,6 +474,42 @@ main {
   height: 5px;
   background-color: #2a6bcd;
   border-radius: 50%;
+}
+
+/* section info css */
+
+
+.info-list {
+  display: flex;
+}
+
+.info-list li {
+  width: 25%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border: 1px solid #7e7e7e;
+  border-right: 0;
+  background-color: #f4f3f3;
+  font-size: 20px;
+  font-weight: 600;
+  color: #464646;
+}
+
+.info-list li:last-child {
+  border-right: 1px solid #7e7e7e;
+}
+
+.info-list li.active {
+  background-color: #fff;
+  color: #2a6bcd;
+  border-bottom: 2px solid #2a6bcd;
+}
+
+.info-content {
+  padding: 75px 50px;
+  font-size: 17px;
+  color: #333;
 }
 
 
