@@ -378,6 +378,7 @@ footer {
   display: flex;
   margin: 0 auto;
   width: 1400px;
+  height: 100%;
   align-items: center;
   background-color: #f3f3f3;
 }
@@ -385,6 +386,7 @@ footer {
 .banner-list {
   display: flex;
   width: 1298px;
+  height: 100%;
   margin: 0 auto;
 }
 
