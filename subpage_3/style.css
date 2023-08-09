@@ -24,7 +24,7 @@ a {
   position: absolute;
   content: '';
   display: block;
-  width: 40%;
+  width: 30%;
   height: 100%;
   background-color: #cacaca;
 }
@@ -83,15 +83,25 @@ a {
 }
 
 .gnb-list ul {
-  visibility: hidden;
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  flex-direction: column;
+  background-color: #00baba;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  z-index: 20;
+}
+
+.gnb-list ul.active {
+  display: block;
   position: absolute;
   top: 60px;
   left: 0;
   display: flex;
   flex-direction: column;
   background-color: #00baba;
-  box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.4);
-  border-top: 1px solid #ececec;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   z-index: 20;
 }
 
@@ -103,10 +113,17 @@ a {
   color: #333;
 }
 
-
 .gnb-list ul li {
   width: 200px;
   height: 60px;
+}
+
+.gnb-list ul li:hover {
+  background-color: #fff;
+}
+
+.gnb-list ul li:hover a{
+  color: #00baba;
 }
 
 .gnb-list ul li a {
