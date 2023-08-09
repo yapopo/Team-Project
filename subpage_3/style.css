@@ -18,6 +18,7 @@ a {
   height: 60px;
   background-color: #fff;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .gnb-nav::before {
