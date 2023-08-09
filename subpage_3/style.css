@@ -151,11 +151,15 @@ a {
   height: 40px;
 }
 
+/* main css */
+
 
 main {
   width: 1240px;
   margin: 0 auto;
 }
+
+/* main-nav css */
 
 .main-nav {
   width: 100%;
@@ -226,6 +230,8 @@ main {
   margin-left: 14px;
   cursor: pointer;
 }
+
+/* section css */
 
 .section {
   display: flex;
