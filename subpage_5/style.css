@@ -538,7 +538,7 @@ main {
   border-radius: 50%;
 }
 
-/* section info css */
+/* section inform css */
 
 
 .info-list {
@@ -556,6 +556,7 @@ main {
   font-size: 20px;
   font-weight: 600;
   color: #464646;
+  cursor: pointer;
 }
 
 .info-list li:last-child {
