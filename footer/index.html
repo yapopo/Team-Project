@@ -16,7 +16,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
+  <!-- slickslider -->
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -26,17 +30,21 @@
     <!-- banner -->
     <div class="banners">
       <div class="banner-contents">
-        <h2>배너모음</h2>
-<<<<<<< HEAD:footer/index.html
-        <!-- <h3>찬미</h3> -->
-=======
->>>>>>> f141d9edc0cf522167212752714571f85a2dcdb6:index.html
         <div class="banner-list">
-          <ul class="banner-btn-list">
-            <li><i class="fa-solid fa-chevron-left"></i></li>
-            <li><i class="fa-solid fa-pause"></i></li>
-            <li><i class="fa-solid fa-chevron-right"></i></li>
-          </ul>
+          <h2>배너모음</h2>
+          <div class="banner-btn-list">
+            <button type="button" class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+
+            <div class="stop-play">
+              <button type="button" class="first"><i class="fa-solid fa-pause stop"></i></button>
+              <button type="button" class="second"><i class="fa-solid fa-play play"></i></button>
+            </div>
+
+            <button type="button" class="next"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+
           <ul class="banner-site-list">
             <li><a href="https://garts.kr/index.do">(재)경주문화재단</a></li>
             <li><a href="http://www.cultureexpo.or.kr/" target="_blank">경주세계엑스포</a></li>
@@ -46,8 +54,10 @@
             <li><a href="http://www.dmgyeongju.com/" target="_blank">동리목월문학관</a></li>
             <li><a href="http://gjsam.or.kr/ko/" target="_blank">경주솔거미술관</a></li>
             <li><a href="http://www.gjtour.or.kr/" target="_blank">경주농촌체험관광</a></li>
+            <li><a href="https://www.gyeongju.go.kr/gyochon/index.do" target="_blank">경주교촌마을</a></li>
+            <li><a href="https://www.gyeongju.go.kr/hwarang/index.do" target="_blank">화랑마을</a></li>
+            <li><a href="https://xn--wk0bx2gp2g1p7a.kr/index.nm?contentId=448" target="_blank">상상황리단길</a></li>
           </ul>
-        </div>
       </div>
     </div>
 
@@ -101,6 +111,8 @@
 
   </footer>
   <!-- footer 끝 -->
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
