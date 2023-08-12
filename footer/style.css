@@ -33,8 +33,7 @@ footer {
   margin: 0 auto;
 }
 
-
-/* slide banner */
+/* slide banner css */
 
 .banners {
   background-color: #F0F0F0;
@@ -48,54 +47,58 @@ footer {
 }
 
 .banner-contents {
-  display: flex;
   margin: 0 auto;
   width: 1400px;
+  height: 56px;
   align-items: center;
-  background-color: #f3f3f3;
+  border-right: 1px solid #ddd ;
 }
 
 .banner-list {
   display: flex;
-  width: 1298px;
-  margin: 0 auto;
+  align-items: center;
+  float: left;
 }
 
-.banner-list ul {
+.banner-btn-list {
   display: flex;
   align-items: center;
+  z-index: 10;
 }
 
-.banner-btn-list i {
-  font-size: 15px;
+.banner-btn-list button {
   padding: 15px;
   cursor: pointer;
 }
 
+.banner-btn-list i {
+  font-size: 15px;
+}
+
+.second {
+  display: none;
+}
+
 .banner-site-list li {
-  align-items: center;
-  width: 171px;
+  width: 170px;
   height: 100%;
-  padding: 15px;
   text-align: center;
   border-left: 1px solid #ddd;
 }
 
 .banner-site-list li a {
+  display: block;
+  padding: 15px;
   text-align: center;
   color: #777;
 }
 
-.banner-site-list li:first-child {
+.slick-current {
   background-color: #fff;
 }
 
-.banner-site-list li:last-child {
-  border-right: 1px solid #ddd;
-}
 
-
-/* footer */
+/* footer css */
 
 .footer-contents {
   width: 100%;
