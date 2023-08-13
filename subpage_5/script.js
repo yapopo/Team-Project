@@ -14,6 +14,13 @@ $(".sub-title1 ul li").click(function(){
 $(".info-list li").click(function(){
   $(".info-list li").removeClass("active")
   $(this).addClass("active")
+  if($(this).hasClass("content")){
+    $(".info-content").css("display","block")
+    $(".info-photo").css("display","none")
+  }else if($(this).hasClass("photo")){
+    $(".info-photo").css("display","block")
+    $(".info-content").css("display","none")
+  }
 })
 
 $(document).ready(function(){

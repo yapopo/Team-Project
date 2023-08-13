@@ -575,6 +575,34 @@ main {
   color: #333;
 }
 
+/* info-photo section css */
+
+.info-photo {
+  display: none;
+  padding: 75px 0 65px 0;
+}
+
+
+.info-photo ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1240px;
+}
+
+.info-photo ul li {
+  width: 25%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.info-photo ul img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
 
 /* footer css */
 
