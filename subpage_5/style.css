@@ -449,16 +449,12 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
   width: 650px;
-  height: 400px;
-  overflow: hidden;
 }
 
 .slide-imgs img {
   width: 650px;
   height: 400px;
-  /* transform: translateX(-650px); */
 }
 
 .buttons {
@@ -473,11 +469,36 @@ main {
   height: 40px;
   color: #fff;
   background-color: rgba(0,0,0,0.6);
-  text-align: center;
+  text-align: end;
   line-height: 40px;
 }
 
-.buttons button {
+.end {
+  padding-right: 15px;
+}
+
+.dot-num {
+  position: relative;
+}
+
+.slick-dots li {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  margin-right: 10px;
+}  
+
+.slick-dots li > button {
+  color: #fff;
+  font-size: 16px;
+  
+}
+
+.slick-dots li:not(.slick-active) {
+  display: none;
+}
+
+.buttons > button {
   width: 40px;
   height: 40px;
   color: #fff;
@@ -486,8 +507,14 @@ main {
   margin-left: 5px;
 }
 
+
+
 #pause {
   font-weight: 700;
+}
+
+#play {
+  display: none;
 }
 
 .text-box {
