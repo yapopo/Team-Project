@@ -1,8 +1,15 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Noto Sans KR', sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  /* overflow-x: hidden; */
 }
 
 li {
@@ -11,166 +18,188 @@ li {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: black;
 }
 
-/* gnb-nav css */
+button {
+  background-color: transparent;
+  border: none;
+}
 
-.gnb-nav {
+
+/*********** section5 문화재 소개***********/
+
+.sction5 {
+  position: relative;
   width: 100%;
-  height: 60px;
-  background-color: #fff;
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.gnb-nav::before {
-  position: absolute;
-  content: '';
-  display: block;
-  width: 20%;
-  height: 100%;
-  background-color: #cacaca;
-}
-
-.gnb-nav-section {
-  width: 1240px;
-  height: 100%;
-  display: flex;
+  height: 900px;
   margin: 0 auto;
-}
-
-.gnb-nav-section ul {
-  display: flex;
-  align-items: center;
-}
-
-.gnb-list{
-  width: 200px;
-  height: 60px;
-  background-color: #00baba;
-  position: relative;
-}
-
-.gnb-list > a {
-  position: relative;
-  display: inline-block;
-  width: 200px;
-  padding: 20px;
-  color: #fff;
-  font-weight: 500;
-}
-
-.home-section {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  background-color: #cacaca;
-}
-
-.home-btn img{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% ,-50%);
-  width: 40px;
-  height: 40px;
-}
-
-/* main css */
-
-main {
-  width: 1240px;
-  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .title {
-  text-align: center;
-  padding: 45px 0;
-}
-
-.title1 {
   font-size: 30px;
-  color: #222222;
   font-weight: bold;
-  margin-bottom: 20px;
+  color: #282D61;
+  text-align: center;
 }
 
-.title2 {
-  font-size: 16px;
-  color: #494949;
+.sec5-title {
+  margin-top: 105px;
 }
 
-.agree {
-  border-bottom: 1px dotted #d0d0d0;
+.sec5-subtitle {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
 }
 
-.agree > p {
-  padding: 20px 0;
-  font-size: 22px;
-  color: #222222;
-  font-weight: 600;
+.background-text {
+  position: absolute;
+  font-size: 120px;
+  color: transparent;
+  z-index: -1;
+  -webkit-text-stroke: 2px #F0F0F0;
 }
 
-.text-box {
-  width: 1240px;
+.cultural {
+  font-family: 'Archivo Black', sans-serif;
+  top: 5px;
+  left: 15%;
+  font-weight: 900;
+}
+
+.properties {
+  font-family: 'Archivo Black', sans-serif;
+  top: 120px;
+  right: 15%;
+  font-weight: 900;
+}
+
+.image-list-wrapper {
+  width: 1400px;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+.top-image-list,
+.bottom-image-list {
+  display: flex;
+}
+
+.top-image-list {
+  margin-top: 106px;
+  margin-bottom: 25px;
+}
+
+.bottom-image-list {
+  transform: translateX(-10%);
+}
+
+.top-image-list img,
+.bottom-image-list img {
+  width: 364px;
   height: 250px;
-  overflow-y: scroll;
-  border: 1px solid #dbdbdb;
-  padding: 20px;
-  color: #666;
+  margin-right: 25px;
+  border-radius: 20px;
 }
 
-.agree label {
-  display: flex;
-  padding: 20px 0;
-  color: #444444;
-  justify-content: end;
-  align-items: center;
+.top-image-list li:last-child img,
+.bottom-image-list li:last-child img {
+  margin-right: 0;
 }
 
-input[type=checkbox] {
-  zoom: 1.5;
+
+
+/*********** section6 축제ㆍ행사***********/
+
+.section6 {
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  background-color: #F5F5F5;
 }
 
-/* 버튼 css */
+.section6-wrapper {
+  position: relative;
+  width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+}
 
-.buttons {
-  padding: 50px 0;
-  display: flex;
-  justify-content: center;
+.sec6-title {
+  padding-top: 60px;
 }
 
 .buttons button {
-  width: 100px;
-  height: 45px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
-  color: #fff;
-  border-radius: 30px;
-  margin: 0 10px;
-  font-size: 16px;
 }
 
-#submit {
-  background-color: #2d2b2b;
-  transition: background-color 300ms ease-in-out;
+.fes-prev {
+  left: 0;
 }
 
-#submit:hover {
-  background-color: #535050;
+.fes-next {
+  right: 0;
 }
 
-#main {
-  background-color: #76777E;
-  transition: all 300ms ease-in-out;
+.buttons i {
+  color: #00BABA;
+  font-size: 50px;
 }
 
-#main:hover {
-  background-color: #fff;
-  border: solid 1px #76777E;
-  color: #76777E;
+.slick-list {
+  height: 310px;
 }
 
+.poster-list {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  width: 1065px;
+}
+
+.poster-list li img {
+  display: block;
+  width: 240px;
+  height: 300px;
+  margin-right: 40px;
+  border-radius: 0 30px 0 30px;
+  object-fit: cover;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+}
+
+.poster-list li:last-child img {
+  margin-right: 0;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+}
+
+
+.slick-dots li {
+  width: 15px;
+  height: 15px;
+  background-color: #aaa;
+  border-radius: 50%;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.slick-dots li.slick-active {
+  background-color: #00BABA;
+  border-radius: 50%;
+}
 
 /* footer css */
 
@@ -218,7 +247,7 @@ footer {
   float: left;
 }
 
-.slick-list {
+footer .slick-list {
   height: 100%;
 }
 
@@ -256,7 +285,7 @@ footer {
   color: #777;
 }
 
-.slick-current {
+footer .slick-current {
   background-color: #fff;
 }
 
