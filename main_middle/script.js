@@ -1,3 +1,5 @@
+// 문화재 스크립트
+
 $(function () {
   $('.top-image-list').slick({
     autoplay: true,
@@ -5,7 +7,7 @@ $(function () {
     speed: 5000,
     arrows: false,
     swipe: false,
-    slidesToShow: 4,
+    slidesToShow: 3.5,
     cssEase: 'linear',
     pauseOnHover: true,
   });
@@ -18,7 +20,7 @@ $(function () {
     speed: 5000,
     arrows: false,
     swipe: false,
-    slidesToShow: 4,
+    slidesToShow: 3.5,
     cssEase: 'linear',
     pauseOnHover: true,
     rtl : true,
