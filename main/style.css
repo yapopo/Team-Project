@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --main-color: #00BABA
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.trip-wrapper {
+  width: 100%;
+  background-color: #eeeeee;
+}
+
+.trip-box {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 1400px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.trip-guide {
+  display: inline-block;
+}
+
+.trip-guide strong {
+  font-size: 25px;
+}
+
+.trip-guide p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.trip {
+  color: var(--main-color);
+}
+
+.trip-list {
+  text-align: center;
+}
+
+.trip-item{
+  display: flex;
+  justify-content:space-between;
+  margin: 0 auto;
+}
+
+.trip-item>li {
+  position: relative;
+  width: 150px;
+  margin-right: 80px;
+}
+
+.trip-item>li:last-child {
+  margin-right: 0;
+}
+
+.trip-item>li:hover .trip-cicle {
+  visibility: visible;
+  transform: scale(2);
+}
+
+.trip-item>li:hover .trip-txt {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.trip-cicle {
+  visibility: hidden;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 80px;
+  /* top: -10px; */
+  background-color: var(--main-color);
+  border-radius: 50%;
+  transition: all .2s ease-in-out ;
+}
+
+.trip-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  opacity: 70%;
+}
+
+.car-img,
+.gung-img {
+  width: 60px;
+  height: 60px; 
+}
+
+.gung-img {
+  padding-bottom: 5px;
+}
+
+.trip-txt {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #333333;
+  transition: all .2s ease-in-out;
+}
+
+.car-txt,
+.gung-txt {
+  margin-top: 5px;
+}
+
+
