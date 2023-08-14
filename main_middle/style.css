@@ -82,18 +82,20 @@ button {
   margin: 0 auto;
 }
 
+/* 
 .top-image-list,
 .bottom-image-list {
   display: flex;
-}
+} */
 
 .top-image-list {
   margin-top: 106px;
   margin-bottom: 25px;
+  display: inline-block;
 }
 
 .bottom-image-list {
-  transform: translateX(-10%);
+  display: inline-block;
 }
 
 .top-image-list img,
