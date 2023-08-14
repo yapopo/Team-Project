@@ -82,9 +82,10 @@ button {
   margin: 0 auto;
 }
 
-.top-image-list,
-.bottom-image-list {
-  display: flex;
+
+.top-image-list li,
+.bottom-image-list li{
+  cursor: pointer;
 }
 
 .top-image-list {
@@ -92,15 +93,14 @@ button {
   margin-bottom: 25px;
 }
 
-.bottom-image-list {
-  transform: translateX(-10%);
+.image-list-wrapper .slick-list {
+  height: 100%;
 }
 
 .top-image-list img,
 .bottom-image-list img {
   width: 364px;
   height: 250px;
-  margin-right: 25px;
   border-radius: 20px;
 }
 
@@ -151,7 +151,7 @@ button {
   font-size: 50px;
 }
 
-.slick-list {
+.poster-list .slick-list {
   height: 310px;
 }
 
