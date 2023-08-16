@@ -14,6 +14,87 @@ a {
   color: #333;
 }
 
+/* gnb-nav css */
+
+.gnb-nav {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.gnb-nav::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 20%;
+  height: 100%;
+  background-color: #cacaca;
+}
+
+.gnb-nav-section {
+  width: 1240px;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.gnb-nav-section ul {
+  display: flex;
+  align-items: center;
+}
+
+.gnb-list{
+  width: 200px;
+  height: 60px;
+  background-color: #00baba;
+  position: relative;
+}
+
+.gnb-list > a {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.home-section {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: #cacaca;
+}
+
+.home-btn img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  width: 40px;
+  height: 40px;
+}
+
+/* main css */
+
+main {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+ .login {
+  width: 100%;
+  margin:  0 auto;
+}
+
+.login p{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+
 /* footer css */
 
 button {
