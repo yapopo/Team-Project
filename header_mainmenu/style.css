@@ -204,6 +204,7 @@ header {
 .menu-buttons ul {
     display: flex;
     align-items: center;
+    min-width: 147px;
 }
 
 .login {

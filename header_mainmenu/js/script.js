@@ -8,12 +8,13 @@ $('.mainmenu-list').hover(function () {
     $('.global-header').css('transition', 'none');
     $('.top-menu, .top-menu a').css('color', '#000');
     $(".top-right-menu img").attr("src", "images/topIcon.png");
-    $('.main-menu').css('border-color','#eee')
+    $('.mainmenu').css('border-color','#bbb');
     $('.mainmenu-item>a').css('color', '#000');
     $('.mainmenu h1 span').css('color', '#000');
     $(".mainmenu h1 img").attr("src", "images/logo.png");
     $(".menu-buttons a, i").css('color', '#000');
     $(".menu-buttons img").attr("src", "images/home-black2.png");
+    $(".submenu-list").css("border-top","1px solid #bbb")
 
 }, function () {
     $(this).find('.submenu-list').stop().slideUp();
@@ -64,6 +65,6 @@ setInterval(() => {
     $('.slider .img-item:first-child').fadeTo(1000, 0)
         .next('.img-item').fadeTo(1000, 1)
         .end(1000).appendTo('.slider')
-}, 7000);
+}, 5000);
 
 
