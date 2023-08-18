@@ -2,12 +2,13 @@
 $('.submenu-list').hide();
 
 // 메인메뉴 hover시 폰트색깔, 이미지 바뀜
-$('.mainmenu-item').hover(function () {
-    $(this).find('.submenu-list').stop().slideDown(400);
+$('.mainmenu-list').hover(function () {
+    $(this).find('.submenu-list').stop().slideDown(500);
     $('.global-header').css('backgroundColor', '#fbfbfb');
     $('.global-header').css('transition', 'none');
     $('.top-menu, .top-menu a').css('color', '#000');
     $(".top-right-menu img").attr("src", "images/topIcon.png");
+    $('.main-menu').css('border-color','#eee')
     $('.mainmenu-item>a').css('color', '#000');
     $('.mainmenu h1 span').css('color', '#000');
     $(".mainmenu h1 img").attr("src", "images/logo.png");
@@ -15,7 +16,7 @@ $('.mainmenu-item').hover(function () {
     $(".menu-buttons img").attr("src", "images/home-black2.png");
 
 }, function () {
-    $(this).find('.submenu-list').stop().slideUp(200);
+    $(this).find('.submenu-list').stop().slideUp();
     $('.global-header').css('backgroundColor', 'transparent');
     $('.global-header').css('transition', '1000ms', 'ease-in-out');
     $('.top-menu, .top-menu a').css('color', '#fff');
@@ -64,3 +65,5 @@ setInterval(() => {
         .next('.img-item').fadeTo(1000, 1)
         .end(1000).appendTo('.slider')
 }, 7000);
+
+
