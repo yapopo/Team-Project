@@ -178,6 +178,10 @@ header {
     z-index: 1;
 }
 
+.ul-wrapper ul li {
+    display: none;
+}
+
 .ul-wrapper ul li a {
     display: block;
     width: 300px;
