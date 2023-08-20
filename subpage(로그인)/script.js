@@ -31,16 +31,6 @@ $('.mainmenu-item').hover(function () {
     $(".ul-wrapper ul li").stop().fadeOut();
 });
 
-// gnb script
-
-
-$(".gnb-list").hover(function(){
-  $(this).find("ul").stop().slideDown();
-  $(this).find("ul").addClass("active")
-}, function(){
-  $(this).find("ul").stop().slideUp();
-  $(this).find("ul").removeClass("active")
-})
 
 
 // 오늘 날짜 가져오기
