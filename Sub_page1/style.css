@@ -243,6 +243,17 @@ header {
   filter: brightness(0.5);
 }
 
+.header-img p {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
 
 /* gnb-nav  */
 .gnb-nav {
