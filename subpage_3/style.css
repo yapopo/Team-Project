@@ -12,7 +12,9 @@ li {
 a {
   text-decoration: none;
   color: #333;
-}button {
+}
+
+button {
   background-color: transparent;
   border: none;
 }
