@@ -183,21 +183,6 @@ $(".play").click(function(){
 })
 
 
-
-
-
-
-
-
-$(".gnb-list").hover(function () {
-  $(this).find("ul").stop().slideDown();
-  $(this).find("ul").addClass("active")
-}, function () {
-  $(this).find("ul").stop().slideUp();
-  $(this).find("ul").removeClass("active")
-})
-
-
 // 우편번호 api 연결
 function sample6_execDaumPostcode() {
   new daum.Postcode({
