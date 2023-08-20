@@ -72,14 +72,6 @@ $('.date').html(dnum);
 $('.week').html(todayLabel);
 
 
-// 이미지 슬라이드
-$('.slider > .img-item:gt(0)').hide();
-setInterval(() => {
-    $('.slider .img-item:first-child').fadeTo(1000, 0)
-        .next('.img-item').fadeTo(1000, 1)
-        .end(1000).appendTo('.slider')
-}, 5000);
-
 
 // footer 스크립트
 
