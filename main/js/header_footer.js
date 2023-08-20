@@ -7,7 +7,7 @@ $('.mainmenu-item').hover(function () {
     $('.global-header').css('backgroundColor', '#fbfbfb');
     $('.global-header').css('transition', 'none');
     $('.top-menu, .top-menu a').css('color', '#000');
-    $(".top-right-menu img").attr("src", "../Project-images/header/topIcon.png");
+    $(".menu-img img").attr("src", "../Project-images/header/topIcon.png");
     $('.mainmenu').css('border-color','#bbb');
     $('.mainmenu-item>a').css('color', '#000');
     $('.mainmenu h1 span').css('color', '#000');
@@ -22,7 +22,7 @@ $('.mainmenu-item').hover(function () {
     $('.global-header').css('backgroundColor', 'transparent');
     $('.global-header').css('transition', '1000ms', 'ease-in-out');
     $('.top-menu, .top-menu a').css('color', '#fff');
-    $(".top-right-menu img").attr("src", "../Project-images/header/topIcon_white.png");
+    $(".menu-img img").attr("src", "../Project-images/header/topIcon_white.png");
     $('.mainmenu-item>a').css('color', '#fff');
     $('.mainmenu h1 span').css('color', '#fff');
     $(".mainmenu h1 img").attr("src", "../Project-images/header/white-logo.png");
