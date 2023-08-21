@@ -171,7 +171,6 @@ a {
   color: #000;
 }
 
-
 /* map image */
 .map-img {
   position: absolute;
@@ -191,6 +190,7 @@ a {
   top: 0;
   z-index: 100;
   text-align: end;
+  border: 1px solid red;
 }
 
 .btn-wrap {
@@ -233,7 +233,12 @@ a {
 }
 
 /* 경주시내권 핵심바이블 slick-dots 배치 */
-.one, .tow, .three, .four, .five {
+.map-btn{
+  .one, .tow, .three, .four, .five,
+.six, .seven, .eight, .nine, .ten,
+.eleven, .twelve, .thirteen, .fourteen, .fifteen,
+.sixteen, .seventeen, .eighteen, .nineteen, .twenty,
+.twenty-one, .twenty-two, .twenty-three, .twenty-four, .twenty-five {
   position: absolute;
 }
 
@@ -261,11 +266,112 @@ a {
   left: 31%;
 }
 
+.six {
+  top: 61%;
+  left: 17.5%;
+}
+
+.seven {
+  top: 54%;
+  left: 33.5%;
+}
+
+.eight {
+  top: 70%;
+  left: 35%;
+}
+
+.nine {
+  top: 66%;
+  left: 22%;
+}
+
+.ten {
+  top: 81%;
+  left: 29%;
+}
+
+.eleven{
+  top: 64%;
+  left: 33%;
+} 
+
+.twelve{
+  top: 81%;
+  left: 32.5%;
+} 
+
+.thirteen{
+  top: 49%;
+  left: 25.5%;
+} 
+
+.fourteen{
+  top: 66%;
+  left: 23%;
+} 
+
+.fifteen{
+  top: 54%;
+  left: 15%;
+}
+
+.sixteen{
+  top: 61%;
+  left: 20%;
+} 
+
+.seventeen{
+  top: 75%;
+  left: 17%;
+} 
+
+.eighteen{
+  top: 47%;
+  left: 25%;
+} 
+
+.nineteen{
+  top: 32%;
+  left: 28%;
+} 
+
+.twenty{
+  top: 70%;
+  left: 31.5%;
+}
+
+.twenty-one{
+  top: 79%;
+  left: 41.5%;
+} 
+
+.twenty-two{
+  top: 93%;
+  left: 49%;
+} 
+
+.twenty-three{
+  top: 61%;
+  left: 40%;
+} 
+
+.twenty-four{
+  top: 65%;
+  left: 51%;
+} 
+
+.twenty-five{
+  top: 80%;
+  left: 51.5%;
+}
+}
+
 
 /* 하단 section tap  */
 .tab-wrap {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 300px;
   display: flex;
   justify-content: center;
