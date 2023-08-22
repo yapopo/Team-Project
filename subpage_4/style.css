@@ -382,7 +382,7 @@ button {
     flex-direction: column;
     background-color: #00baba;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    z-index: 20;
+    z-index: 1;
 }
 
 .gnb-list ul.active {
@@ -394,7 +394,7 @@ button {
     flex-direction: column;
     background-color: #00baba;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    z-index: -10;
+    z-index: 1;
 }
 
 .gnb-list:last-child ul {
@@ -442,9 +442,9 @@ button {
 }
 
 main {
+    position: relative;
     width: 1240px;
     margin: 0 auto;
-    z-index: -100;
 
 }
 
