@@ -25,13 +25,17 @@ button {
   border: none;
 }
 
+.wrapper {
+  width: 100%;
+}
+
 
 /*********** header ***********/
 
 header {
   margin: 0 auto;
-  width: 100vw;
-  height: 1080px;
+  width: 100%;
+  height: 700px;
   overflow: hidden;
 }
 
@@ -273,25 +277,25 @@ header {
   top: 0;
   width: 100vw;
   overflow: hidden;
-  height: 1080px;
+  height: 700px;
   z-index: -5;
 }
 
-.slider {
+/* .slider {
   display: flex;
   width: 700vw;
   height: 1080px;
   z-index: -5;
   background-color: #000;
-}
+} */
 
 .img-item {
   width: 100vw;
 }
 
 .slider img {
-  width: 100vw;
-  height: 100%;
+  width: 100%;
+  height: 700px;
   object-fit: cover;
 }
 
