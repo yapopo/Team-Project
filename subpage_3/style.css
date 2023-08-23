@@ -362,7 +362,6 @@ header {
   left: 0;
   flex-direction: column;
   background-color: #00baba;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   z-index: 20;
 }
 
@@ -374,7 +373,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: #00baba;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   z-index: 20;
 }
 
@@ -389,6 +388,7 @@ header {
 .gnb-list ul li {
   width: 200px;
   height: 60px;
+  border-right: 1px solid #eeeeee;
 }
 
 .gnb-list ul li:hover {
