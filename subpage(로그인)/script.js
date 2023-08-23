@@ -128,45 +128,6 @@ $(".info-list li").click(function(){
   }
 })
 
-// slide 스크립트
-
-$(document).ready(function(){
-  $('.slide-imgs').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    autoplay: true,
-    dots : true,
-    appendDots : $(".num"),
-    autoplaySpeed: 4000,
-    pauseOnHover : true,
-    prevArrow: $('#prev'),
-    nextArrow: $('#next'),
-  });
-
-  $('#play').click(function(){
-    $('.slide-imgs').slick('slickPlay');
-    
-  }); 
-  $('#pause').click(function(){
-    $('.slide-imgs').slick('slickPause');
-
-  });
-})
-
-$(".slick-dots li button").attr("disabled",false)
-
-
-$("#pause").click(function(){
-  $("#pause").css("display","none")
-  $("#play").css("display","block")
-})
-
-$("#play").click(function(){
-  $("#play").css("display","none")
-  $("#pause").css("display","block")
-})
-
 
 // footer 스크립트
 
