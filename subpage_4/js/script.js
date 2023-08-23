@@ -40,6 +40,8 @@ $('.mainmenu-item').hover(function () {
   $(this).find(".submenu-left-img").stop().fadeOut(500);
 });
 
+
+
 // gnb script
 
 
