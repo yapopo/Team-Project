@@ -16,6 +16,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../Project-images/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Project-images/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Project-images/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="../Project-images/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="../Project-images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <!-- slickslider -->
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
@@ -24,132 +32,143 @@
 <body>
   <div class="wrapper">
     <!-- header -->
-      <header>
-        <nav class="global-header">
-            <!-- 최상단 메뉴 -->
-            <!-- top버튼 넣어야됨 -->
-            <div class="top-menu">
-                <ul class="top-left-menu">
-                    <li><a href="https://www.gyeongju.go.kr/open_content/ko/index.do" target="_blank">경주시청</a></li>
-                    <li><a href="https://www.gyeongju.go.kr/gyeongjuimage/index.do" target="_blank">미디어자료관</a></li>
-                </ul>
+    <header>
+      <nav class="global-header">
+          <!-- 최상단 메뉴 -->
+          <!-- top버튼 넣어야됨 -->
+          <div class="top-menu">
+              <ul class="top-left-menu">
+                  <li><a href="https://www.gyeongju.go.kr/open_content/ko/index.do" target="_blank">경주시청</a></li>
+                  <li><a href="https://www.gyeongju.go.kr/gyeongjuimage/index.do" target="_blank">미디어자료관</a></li>
+              </ul>
 
-                <ul class="top-right-menu">
-                    <!-- 매일 날짜 가져옴 -->
-                    <li>
-                        <span class="month"></span>.
-                        <span class="date"></span>
-                        (<span class="week"></span>)
-                    </li>
-                    <li>36.5°C</li>
-                    <li>미세먼지 좋음</li>
-                    <li><a href="">전체누리집 바로가기
-                            <img src="../Project-images/header/topIcon_white.png" alt="전체누리집 바로가기 아이콘"></a></li>
-                </ul>
-            </div>
+              <ul class="top-right-menu">
+                  <!-- 매일 날짜 가져옴 -->
+                  <li>
+                      <span class="month"></span>.
+                      <span class="date"></span>
+                      (<span class="week"></span>)
+                  </li>
+                  <li class="weather"><span class="temp"></span><span class="weather-icon"></span></li>
+                  <li>미세먼지 좋음</li>
+                  <li class="menu-img"><a href="">전체누리집 바로가기
+                          <img src="../Project-images/header/topIcon_white.png" alt="전체누리집 바로가기 아이콘"></a></li>
+              </ul>
+          </div>
 
-            <div class="mainmenu">
-                <!-- 3개구역 [로고/메인메뉴/버튼리스트] -->
-                <h1>
-                    <a href="#"><img src="../Project-images/header/white-logo.png" alt="사이트 로고">
-                        <span>경주문화관광</span></a>
-                </h1>
+          <div class="mainmenu">
+              <!-- 3개구역 [로고/메인메뉴/버튼리스트] -->
+              <h1>
+                  <a href="#"><img src="../Project-images/header/white-logo.png" alt="사이트 로고">
+                      <span>경주문화관광</span></a>
+              </h1>
 
 
-                <!-- 메인메뉴 list 안에 submenu 포함 -->
-                <ul class="mainmenu-list">
-                    <li class="mainmenu-item"><a href="">경주여행</a>
-                        <div class="submenu-list">
-                            <!-- 경주여행 -->
-                            <div class="submenu-left-img"></div>
-                            <div class="ul-wrapper">
-                                <ul>
-                                    <li><a href="">권역별 관광지</a></li>
-                                    <li><a href="">여행코스추천</a></li>
-                                    <li><a href="">경주의 자연</a></li>
-                                    <li><a href="">체험과 레저</a></li>
-                                    <li><a href="">투어프로그램</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
+              <!-- 메인메뉴 list 안에 submenu 포함 -->
+              <ul class="mainmenu-list">
+                  <li class="mainmenu-item"><a href="">경주여행</a>
+                      <div class="submenu-list">
+                          <!-- 경주여행 -->
+                          <div class="submenu-left-img">
+                              <p></p>
+                          </div>
+                          <div class="ul-wrapper">
+                              <ul>
+                                  <li><a href="">권역별 관광지</a></li>
+                                  <li><a href="">여행코스추천</a></li>
+                                  <li><a href="">경주의 자연</a></li>
+                                  <li><a href="">체험과 레저</a></li>
+                                  <li><a href="">투어프로그램</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="submenu-back"></div>
+                  </li>
 
-                    <li class="mainmenu-item"><a href="">문화행사</a>
-                        <div class="submenu-list">
-                            <!-- 문화행사 -->
-                            <div class="submenu-left-img"></div>
-                            <div class="ul-wrapper">
-                                <ul>
-                                    <li><a href="">이달의 축제 및 행사</a></li>
-                                    <li><a href="">정기축제 행사안내</a></li>
-                                    <li><a href="">공연전시 정보</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
+                  <li class="mainmenu-item"><a href="">문화행사</a>
+                      <div class="submenu-list">
+                          <!-- 문화행사 -->
+                          <div class="submenu-left-img">
+                              <p></p>
+                          </div>
+                          <div class="ul-wrapper">
+                              <ul>
+                                  <li><a href="">이달의 축제 및 행사</a></li>
+                                  <li><a href="">정기축제 행사안내</a></li>
+                                  <li><a href="">공연전시 정보</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </li>
 
-                    <li class="mainmenu-item"><a href="">문화재/역사</a>
-                        <div class="submenu-list">
-                            <!-- 문화재/역사 -->
-                            <div class="submenu-left-img"></div>
-                            <div class="ul-wrapper">
-                                <ul>
-                                    <li><a href="">세계문화유산</a></li>
-                                    <li><a href="">경주의 역사</a></li>
-                                    <li><a href="">분류별 국가유산</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
+                  <li class="mainmenu-item"><a href="">문화재/역사</a>
+                      <div class="submenu-list">
+                          <!-- 문화재/역사 -->
+                          <div class="submenu-left-img">
+                              <p></p>
+                          </div>
+                          <div class="ul-wrapper">
+                              <ul>
+                                  <li><a href="">세계문화유산</a></li>
+                                  <li><a href="">경주의 역사</a></li>
+                                  <li><a href="">분류별 국가유산</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </li>
 
-                    <li class="mainmenu-item"><a href="">음식/숙박/쇼핑</a>
-                        <div class="submenu-list">
-                            <!-- 음식/숙박/쇼핑 -->
-                            <div class="submenu-left-img"></div>
-                            <div class="ul-wrapper">
-                                <ul>
-                                    <li><a href="">음식</a></li>
-                                    <li><a href="">숙박</a></li>
-                                    <li><a href="">쇼핑</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
+                  <li class="mainmenu-item"><a href="">음식/숙박/쇼핑</a>
+                      <div class="submenu-list">
+                          <!-- 음식/숙박/쇼핑 -->
+                          <div class="submenu-left-img">
+                              <p></p>
+                          </div>
+                          <div class="ul-wrapper">
+                              <ul>
+                                  <li><a href="">음식</a></li>
+                                  <li><a href="">숙박</a></li>
+                                  <li><a href="">쇼핑</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </li>
 
-                    <li class="mainmenu-item"><a href="">여행도우미</a>
-                        <div class="submenu-list">
-                            <!-- 여행도우미 -->
-                            <div class="submenu-left-img"></div>
-                            <div class="ul-wrapper">
-                                <ul>
-                                    <li><a href="">교통정보</a></li>
-                                    <li><a href="">문화관광 해설사</a></li>
-                                    <li><a href="">관광안내지도</a></li>
-                                    <li><a href="">공중화장실</a></li>
-                                    <li><a href="">경주관광코스</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                  <li class="mainmenu-item"><a href="">여행도우미</a>
+                      <div class="submenu-list">
+                          <!-- 여행도우미 -->
+                          <div class="submenu-left-img">
+                              <p></p>
+                          </div>
+                          <div class="ul-wrapper">
+                              <ul>
+                                  <li><a href="">교통정보</a></li>
+                                  <li><a href="">문화관광 해설사</a></li>
+                                  <li><a href="">관광안내지도</a></li>
+                                  <li><a href="">공중화장실</a></li>
+                                  <li><a href="">경주관광코스</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
 
-                <div class="menu-buttons">
-                    <ul>
-                        <li><a href="" class="login">로그인</a></li>
-                        <li><a href="#"><img src="../Project-images/header/home-white.png" alt="메인페이지로 가기"></a></li>
-                        <li><a href="">
-                                <i class="fa-solid fa-bars hamberger"></i></a></li>
-                    </ul>
-                </div>
+              <div class="menu-buttons">
+                  <ul>
+                      <li><a href="" class="login">로그인</a></li>
+                      <li><a href="#"><img src="../Project-images/header/home-white.png" alt="메인페이지로 가기"></a></li>
+                      <li><a href="">
+                              <i class="fa-solid fa-bars hamberger"></i></a></li>
+                  </ul>
+              </div>
 
-            </div>
-        </nav>
+          </div>
+      </nav>
 
 <!-- header-img -->
-        <div class="header-img">
-           <img src="../Project-images/subpage2(문화행사)/header-main.jpg" alt="">
-           <p>문화행사</p>
-        </div>
+      <div class="header-img">
+         <img src="../Project-images/subpage2(문화행사)/header-main.jpg" alt="">
+         <p>문화행사</p>
+      </div>
     </header>
     <!-- gnb-nav -->
     <div class="gnb-nav">
@@ -220,7 +239,7 @@
         <div class="right"></div>
       </section>
       <!-- section2 -->
-      <section class="section second">
+      <section class="section sec">
         <div class="left"></div>
         <div class="right">
           <p class="sub-title">청춘을 돌려다오</p>
