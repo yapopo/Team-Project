@@ -6,8 +6,12 @@
 }
 
 :root {
-  /* colors */
-  --main-color: #00BABA
+  --sub-color: #fac43d;
+  --main-color: #3c84ab;
+  --main-text-color:#333333;
+  --sub-text-color:#000000;
+  --sub-title-text: #282d61;
+  --menu-text-color: #354141;
 }
 
 li {
@@ -51,6 +55,7 @@ header {
 
 .top-menu ul {
   display: flex;
+  align-items: center;
 }
 
 .top-left-menu {
@@ -73,12 +78,13 @@ header {
 .weather {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .weather-icon img {
   width: 30px;
   height: 30px;
-  margin-top: -5px;
+  margin-top: 2px;
   margin-left: 5px;
 }
 
@@ -123,7 +129,7 @@ header {
 
 .mainmenu-list {
   display: flex;
-  min-width: 720px;
+  min-width: 726px;
 }
 
 /* .mainmenu-item {
@@ -145,7 +151,7 @@ header {
   left: 10%;
   width: 80%;
   height: 3px;
-  background-color: #00BABA;
+  background-color: var(--main-color);
   z-index: 100;
   transform: scaleX(0);
   transition: transform 500ms ease-in-out;
@@ -221,9 +227,9 @@ header {
 
 .ul-wrapper ul li a:hover {
   color: #fff;
-  font-weight: bold;
+  font-weight: lighter;
   border: none;
-  background-color: #00BABA;
+  background-color: var(--main-color);
 }
 
 .submenu-back {
@@ -322,8 +328,9 @@ header {
 .gnb-list{
   width: 200px;
   height: 60px;
-  background-color: #00baba;
+  background-color: var(--main-color);
   position: relative;
+  border-right: 1px solid #eeeeee;
 }
 
 .gnb-list > a {
@@ -350,6 +357,7 @@ header {
 
 .gnb-list:last-child {
   background-color: #fff;
+  border-right: none;
 }
 
 .gnb-list:last-child > a {
@@ -366,7 +374,7 @@ header {
   top: 60px;
   left: 0;
   flex-direction: column;
-  background-color: #00baba;
+  background-color: var(--main-color);
   z-index: 20;
 }
 
@@ -374,7 +382,7 @@ header {
   display: block;
   display: flex;
   flex-direction: column;
-  background-color: #00baba;
+  background-color: var(--main-color);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   z-index: 20;
 }
@@ -539,7 +547,7 @@ main {
   height: 40px;
   bottom: 40px;
   left: 50px;
-  background-color: var(--main-color);
+  background-color: var(--sub-color);
   border-radius: 50%;
 }
 
