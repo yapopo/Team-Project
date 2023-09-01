@@ -169,10 +169,34 @@ a {
   text-shadow: none;
 }
 
-.slick-dots li:first-child {
+/* slide 화살표 */
+
+.slider-arrow {
+  position: absolute;
+  top : 262px;
+  right: 18px;
+  display: flex;
+}
+
+.slider-arrow span{
+  padding: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* slide-wrap1 dots 위치잡기 */
+
+.slide-wrap1 .slick-dots li:first-child {
   position: relative;
-  top: -100px;
-  left: 600px;
+  top: -460px;
+  left: 800px;
+}
+
+.slide-wrap1 .slick-dots li:nth-child(2) {
+  position: relative;
+  top: -400px;
+  left: 800px;
 }
 
 /*slick-slider 끝 */

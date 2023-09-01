@@ -1,11 +1,13 @@
-$(".slide-wrap").slick({
+$(".slide-wrap1").slick({
   dots: true,
   autoplay : true,
   autoplaySpeed : 1000,
-  arrows: false,
+  arrows: true,
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
+  prevArrow: $('.img-prev'),
+  nextArrow: $('.img-next'),
 
 customPaging : function(slider, i) {
 var title = $(slider.$slides[i]).data('title');
