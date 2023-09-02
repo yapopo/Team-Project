@@ -20,6 +20,7 @@ li {
 
 a {
   text-decoration: none;
+  color: var(--main-text-color);
 }
 
 /* header */
@@ -49,7 +50,6 @@ header {
 
 .top-menu ul {
   display: flex;
-  align-items: center;
 }
 
 .top-left-menu {
@@ -59,13 +59,15 @@ header {
 }
 
 .top-right-menu {
+  display: flex;
+  align-items: center;
   gap: 45px;
-  min-width: 445px;
+  min-width: 480px;
 }
 
 .menu-img img {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   margin-left: 5px;
 }
 
@@ -78,7 +80,7 @@ header {
 .weather-icon img {
   width: 30px;
   height: 30px;
-  margin-top: 2px;
+  margin-top: 5px;
   margin-left: 5px;
 }
 
@@ -126,8 +128,6 @@ header {
   min-width: 726px;
 }
 
-
-
 .mainmenu-item>a {
   position: relative;
   display: flex;
@@ -171,9 +171,10 @@ header {
   width: 482px;
   height: 500px;
   background-image: url('../Project-images/header/gnb_obj2.png');
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   display: none;
+  min-width: 260px;
 }
 
 .submenu-left-img p {
@@ -193,6 +194,7 @@ header {
   height: 100%;
   padding: 89px 130px;
   display: none;
+  min-width: 1000px;
 }
 
 .ul-wrapper ul {
