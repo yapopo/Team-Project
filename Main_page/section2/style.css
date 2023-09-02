@@ -189,6 +189,9 @@ a {
   cursor: pointer;
 }
 
+.slider-arrow span:hover {
+  background-color: var(--main-color);
+} 
 
 /* slide-wrap1 dots 위치잡기 */
 /* page1 */
