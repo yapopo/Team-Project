@@ -81,6 +81,10 @@ a {
   display: none;
 }
 
+.slide-out .slider-arrow {
+  display: inline-block;
+}
+
 .slide-wrap1.out {
   display: block;
 }
@@ -184,23 +188,27 @@ a {
 
 /* slide 화살표 */
 
-.slider-arrow {
+.slide-wrap1 .slick-arrow {
   position: absolute;
-  top: 272.5px;
-  right: 18px;
-  display: flex;
-}
-
-.slider-arrow span {
-  padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.6);
+  top: 257px;
+  background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
-  font-size: 1.2rem;
-  transition: all 500ms ease-in-out;
+  border: none;
+  padding: 10px 17px;
+  z-index: 50;
   cursor: pointer;
+  font-size: 1.1rem;
 }
 
-.slider-arrow span:hover {
+.slide-wrap1 .slick-prev {
+  right: 45px;
+}
+
+.slide-wrap1 .slick-next {
+  right: 0;
+}
+
+.slide-wrap1 .slick-arrow:hover {
   background-color: var(--main-color);
 } 
 
@@ -241,38 +249,38 @@ a {
 
 .page2 .slick-dots li:first-child {
   position: relative;
-  top: -335px;
+  top: -315px;
   left: 670px;
 }
 
 .page2 .slick-dots li:nth-child(2) {
   position: relative;
-  top: -380px;
+  top: -360px;
   left: 755px;
 }
 
 .page2 .slick-dots li:nth-child(3) {
   position: relative;
-  top: -300px;
+  top: -280px;
   left: 940px;
 }
 
 .page2 .slick-dots li:nth-child(4) {
   position: relative;
-  top: -355px;
+  top: -338px;
   left: 755px;
 }
 
 .page2 .slick-dots li:last-child {
   position: relative;
-  top: -250px;
-  left: 620px;
+  top: -230px;
+  left: 615px;
 }
 
 /* page3 */
 .page3 .slick-dots li:first-child {
   position: relative;
-  top: -300px;
+  top: -295px;
   left: 890px;
 }
 

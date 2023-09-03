@@ -6,8 +6,7 @@ $(".slide-wrap1").slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  prevArrow: $('.img-prev'),
-  nextArrow: $('.img-next'),
+
 
   customPaging: function (slider, i) {
       var title = $(slider.$slides[i]).data('title');
@@ -15,6 +14,7 @@ $(".slide-wrap1").slick({
       return '<a class="item-dot"> <span>' + [i + 1] + '</span>' + title + ' </a>'
 
   },
+  
 
 });
 
@@ -37,5 +37,12 @@ for (let i = 0; i < btnlen; i++) {
       if(slickPage.hasClass('out')){
         mapImg.attr('src',`../Project-images/section_map/back${i+1}.png`)
       }
+      $(".slide-wrap1 .slick-prev").html("<i class='fa-solid fa-chevron-left'></i>")
+      $(".slide-wrap1 .slick-next").html("<i class='fa-solid fa-chevron-right'></i>")
   });
 }
+
+// 화살표
+
+$(".slide-wrap1 .slick-prev").html("<i class='fa-solid fa-chevron-left'></i>")
+$(".slide-wrap1 .slick-next").html("<i class='fa-solid fa-chevron-right'></i>")
