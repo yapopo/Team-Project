@@ -36,4 +36,4 @@ for (let i = 0; i < btnlen; i++) {
         // slide 오류 방지 
         $('.slide-wrap1').slick('setPosition');
     });
-}
+ }
