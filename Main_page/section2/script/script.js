@@ -25,13 +25,15 @@ $(".slide-wrap1").slick({
 // tap
 let btn = $('.tab-btn');
 let btnlen = $('.tab-btn').length;
-let con = $('.tab-content');
+let content = $('.tab-content');
 
 for (let i = 0; i < btnlen; i++) {
     btn.eq(i).on('click', function () {
         btn.removeClass('active');
         btn.eq(i).addClass('active');
-        con.removeClass('show')
-        con.eq(i).addClass('show');
+        content.removeClass('show')
+        content.eq(i).addClass('show');
+        // slide 오류 방지 
+        $('.slide-wrap1').slick('setPosition');
     });
 }
