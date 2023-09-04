@@ -286,7 +286,7 @@ header {
 .slider-wrapper {
   position: absolute;
   top: 0;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   height: 800px;
   z-index: -5;
@@ -435,6 +435,10 @@ header {
 
 
 /************** section3 지도 **************/
+
+.section3 {
+  width: 100%;
+}
 
 
 .tab-content {
@@ -858,9 +862,9 @@ header {
 }
 
 
-/*********** section5 문화재 소개***********/
+/*********** section4 문화재 소개***********/
 
-.sction5 {
+.sction4 {
   position: relative;
   width: 100%;
   height: 900px;
@@ -875,11 +879,11 @@ header {
   text-align: center;
 }
 
-.sec5-title {
+.sec4-title {
   margin-top: 105px;
 }
 
-.sec5-subtitle {
+.sec4-subtitle {
   text-align: center;
   margin-top: 10px;
   font-size: 20px;
@@ -942,23 +946,23 @@ header {
 
 
 
-/*********** section6 축제ㆍ행사***********/
+/*********** section5 축제ㆍ행사***********/
 
-.section6 {
+.section5 {
   width: 100%;
   height: 600px;
   margin: 0 auto;
   background-color: #F5F5F5;
 }
 
-.section6-wrapper {
+.section5-wrapper {
   position: relative;
   width: 1400px;
   height: 100%;
   margin: 0 auto;
 }
 
-.sec6-title {
+.sec5-title {
   padding-top: 60px;
 }
 
@@ -1008,7 +1012,7 @@ header {
   margin-right: 0;
 }
 
-.section6 .slick-dots {
+.section5 .slick-dots {
   position: absolute;
   bottom: 100px;
   left: 50%;
@@ -1019,7 +1023,7 @@ header {
 }
 
 
-.section6 .slick-dots li {
+.section5 .slick-dots li {
   width: 15px;
   height: 15px;
   background-color: #aaa;
@@ -1028,7 +1032,7 @@ header {
   cursor: pointer;
 }
 
-.section6 .slick-dots li.slick-active {
+.section5 .slick-dots li.slick-active {
   background-color: var(--sub-color);
   border-radius: 50%;
 }
