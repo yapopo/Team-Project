@@ -31,6 +31,9 @@ function updateData(){
                 latestData = item;
                 // console.log(latestData)
 
+                let dataItem = document.createElement('div');
+                dataItem.innerHTML =  '미세먼지 ' + item.pm10Value;
+                dataDisplay.appendChild(dataItem);
                 if(item.pm10Value <= 30) {
                   item.pm10Value = '좋음'
                 }else if(item.pm10Value <= 80) {
@@ -40,10 +43,6 @@ function updateData(){
                 }else {
                   item.pm10Value = '매우나쁨'
                 };
-
-                let dataItem = document.createElement('div');
-                dataItem.innerHTML =  '미세먼지 ' + item.pm10Value;
-                dataDisplay.appendChild(dataItem);
               }
             }
           }
