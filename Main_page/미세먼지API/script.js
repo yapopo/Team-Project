@@ -18,7 +18,7 @@ function updateData(){
   
         if(responsData.response.body.items) {
           let items = responsData.response.body.items;
-          console.log(items)
+          // console.log(items)
   
           let dataDisplay = document.getElementById('data');
           let latestData = null;
@@ -29,20 +29,16 @@ function updateData(){
             if(item.cityName == '경주시') {
               if(!latestData || item.dataTime > latestData.dataTime ) {
                 latestData = item;
-                console.log(latestData)
+                // console.log(latestData)
 
-                if (item.pm10Value <= 30) {
+                if(item.pm10Value <= 30) {
                   item.pm10Value = '좋음'
-                  console.log=('좋음')
-                } else if (item.pm10Value <= 80) {
+                }else if(item.pm10Value <= 80) {
                   item.pm10Value = '보통'
-                  console.log=('보통')
-                }else if (item.pm10Value <= 150) {
+                }else if(item.pm10Value <= 150) {
                   item.pm10Value = '나쁨'
-                  console.log=('나쁨')
                 }else {
                   item.pm10Value = '매우나쁨'
-                  console.log=('매우나쁨')
                 };
 
                 let dataItem = document.createElement('div');
