@@ -537,7 +537,7 @@ main {
 
 .first .right{
  height: 650px;
- background-image: url(./images/content1.jpg);
+ background-image: url('../Project-images/subpage2(문화행사)/content1.jpg');
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
@@ -599,7 +599,7 @@ main {
 
 .sec .left {
   height: 650px;
-  background-image: url(./images/content2.jpg);
+  background-image: url('../Project-images/subpage2(문화행사)/content2.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -633,7 +633,7 @@ main {
 
 .third .right {
   height: 650px;
-  background-image: url(./images/content3.jpg);
+  background-image: url('../Project-images/subpage2(문화행사)/content3.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
