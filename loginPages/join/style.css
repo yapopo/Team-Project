@@ -170,7 +170,7 @@ header {
   position: relative;
   width: 482px;
   height: 500px;
-  background-image: url('../Project-images/header/gnb_obj2.png');
+  background-image: url('../../Project-images/header/gnb_obj2.png');
   background-repeat: no-repeat;
   background-size: cover;
   display: none;
@@ -504,7 +504,7 @@ input[type="password"] {
   padding: 5px;
 }
 
-button {
+form button {
   color: #444;
   width: 90px;
   height: 32px;
@@ -522,9 +522,6 @@ button {
   align-items: center;
 }
 
-.pw-text {
-  /* margin: 0 5px; */
-}
 
 .pw-img {
   width: 22px;
