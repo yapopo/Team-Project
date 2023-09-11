@@ -13,13 +13,13 @@ $('.mainmenu-item').hover(function () {
   $('.global-header').css('backgroundColor', '#fbfbfb');
   $('.global-header').css('transition', 'none');
   $('.top-menu, .top-menu a').css('color', '#000');
-  $(".menu-img img").attr("src", "../Project-images/header/topIcon.png");
+  $(".menu-img img").attr("src", "../../Project-images/header/topIcon.png");
   $('.mainmenu').css('border-color', '#bbb');
   $('.mainmenu-item>a').css('color', '#000');
   $('.mainmenu h1 span').css('color', '#000');
-  $(".mainmenu h1 img").attr("src", "../Project-images/header/logo.png");
+  $(".mainmenu h1 img").attr("src", "../../Project-images/header/logo.png");
   $(".menu-buttons a, i").css('color', '#000');
-  $(".menu-buttons img").attr("src", "../Project-images/header/home-black2.png");
+  $(".menu-buttons img").attr("src", "../../Project-images/header/home-black2.png");
   $(".submenu-list").css("border-top", "1px solid #bbb")
   $(this).find(".ul-wrapper").stop().fadeIn(1000);
   $(this).find(".submenu-left-img").stop().fadeIn(1000);
@@ -30,12 +30,12 @@ $('.mainmenu-item').hover(function () {
   $('.global-header').css('backgroundColor', 'transparent');
   $('.global-header').css('transition', '1000ms', 'ease-in-out');
   $('.top-menu, .top-menu a').css('color', '#fff');
-  $(".menu-img img").attr("src", "../Project-images/header/topIcon_white.png");
+  $(".menu-img img").attr("src", "../../Project-images/header/topIcon_white.png");
   $('.mainmenu-item>a').css('color', '#fff');
   $('.mainmenu h1 span').css('color', '#fff');
-  $(".mainmenu h1 img").attr("src", "../Project-images/header/white-logo.png");
+  $(".mainmenu h1 img").attr("src", "../../Project-images/header/white-logo.png");
   $(".menu-buttons a, i").css('color', '#fff');
-  $(".menu-buttons img").attr("src", "../Project-images/header/home-white.png");
+  $(".menu-buttons img").attr("src", "../../Project-images/header/home-white.png");
   $(this).find(".ul-wrapper").stop().fadeOut(500);
   $(this).find(".submenu-left-img").stop().fadeOut(500);
 });
@@ -217,7 +217,8 @@ let essenInfo = '<span class="text-red"> 필수 정보입니다. </span>';
 // 아이디
 // window.onload = function () {
 
-document.querySelector('.id input').addEventListener('focusout', function () {
+document.querySelector('.userid input').addEventListener('focusout', function () {
+
   let userId = this.value;
   let idExp = /^[a-z0-9]{5,8}$/;
   let idWarn = document.querySelector('.id .warn');
@@ -249,16 +250,16 @@ userPw.addEventListener('focusout', function () {
   if (userPwVal.length == 0) {
     pwWarn.innerHTML = essenInfo;
     pwText.innerHTML = '';
-    pwImg.src = 'images/signup/m_icon_pw_step_01.png';
+    pwImg.src = '../../Project-images/login/m_icon_pw_step_01.png';
   } else if (!pwExp.test(userPwVal)) {
     pwWarn.innerHTML = '<span class="text-red"> 8~20자 영문 대 소문자, 숫자, 특수문자를 사용하세요. </span>';
     pwText.innerHTML = '<span class="text-red"> 사용불가 </span>';
-    pwImg.src = 'images/signup/m_icon_pw_step_10.png';
+    pwImg.src = '../../Project-images/login/m_icon_pw_step_10.png';
   } else {
     pwveri = true;
     pwWarn.innerHTML = '';
     pwText.innerHTML = '<span class="text-green"> 안전 </span>';
-    pwImg.src = 'images/signup/m_icon_pw_step_04.png';
+    pwImg.src = '../../Project-images/login/m_icon_pw_step_04.png';
   }
 })
 
