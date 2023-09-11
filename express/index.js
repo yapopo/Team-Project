@@ -9,10 +9,6 @@ app.listen(7000, function () {
 // 폴더 내 모든 정적파일 제공(js, css, images, fonts)
 // 폴더명 다를시 변경해야함
 app.use(express.static(__dirname))
-app.use(express.static("./subpage_8"))
-app.use(express.static("./subpage_8/js"))
-app.use(express.static("./subpage(로그인)"))
-app.use(express.static("./Sub_page1(map)"))
 app.use(express.static("./tripHelper_sub5"))
 app.use(express.static("./loginPages"))
 
