@@ -73,7 +73,7 @@
   
                 <!-- 메인메뉴 list 안에 submenu 포함 -->
                 <ul class="mainmenu-list">
-                    <li class="mainmenu-item"><a href="">경주여행</a>
+                    <li class="mainmenu-item"><a href="../travel_sub1/travel.html">경주여행</a>
                         <div class="submenu-list">
                             <!-- 경주여행 -->
                             <div class="submenu-left-img">
@@ -82,7 +82,7 @@
                             <div class="ul-wrapper">
                                 <ul>
                                     <li><a href="">권역별 관광지</a></li>
-                                    <li><a href="">여행코스추천</a></li>
+                                    <li><a href="../travel_sub1/travel.html">여행코스추천</a></li>
                                     <li><a href="">경주의 자연</a></li>
                                     <li><a href="">체험과 레저</a></li>
                                     <li><a href="">투어프로그램</a></li>
@@ -92,7 +92,7 @@
                         <div class="submenu-back"></div>
                     </li>
   
-                    <li class="mainmenu-item"><a href="">문화행사</a>
+                    <li class="mainmenu-item"><a href="../festival_sub2/festival.html">문화행사</a>
                         <div class="submenu-list">
                             <!-- 문화행사 -->
                             <div class="submenu-left-img">
@@ -101,14 +101,14 @@
                             <div class="ul-wrapper">
                                 <ul>
                                     <li><a href="">이달의 축제 및 행사</a></li>
-                                    <li><a href="">정기축제 행사안내</a></li>
+                                    <li><a href="../festival_sub2/festival.html">정기축제 행사안내</a></li>
                                     <li><a href="">공연전시 정보</a></li>
                                 </ul>
                             </div>
                         </div>
                     </li>
   
-                    <li class="mainmenu-item"><a href="">문화재/역사</a>
+                    <li class="mainmenu-item"><a href="../culture_sub3/culture.html">문화재·역사</a>
                         <div class="submenu-list">
                             <!-- 문화재/역사 -->
                             <div class="submenu-left-img">
@@ -116,7 +116,7 @@
                             </div>
                             <div class="ul-wrapper">
                                 <ul>
-                                    <li><a href="">세계문화유산</a></li>
+                                    <li><a href="../culture_sub3/culture.html">세계문화유산</a></li>
                                     <li><a href="">경주의 역사</a></li>
                                     <li><a href="">분류별 국가유산</a></li>
                                 </ul>
@@ -124,7 +124,7 @@
                         </div>
                     </li>
   
-                    <li class="mainmenu-item"><a href="">음식/숙박/쇼핑</a>
+                    <li class="mainmenu-item"><a href="../food_sub4/food.html">음식·숙박·쇼핑</a>
                         <div class="submenu-list">
                             <!-- 음식/숙박/쇼핑 -->
                             <div class="submenu-left-img">
@@ -132,7 +132,7 @@
                             </div>
                             <div class="ul-wrapper">
                                 <ul>
-                                    <li><a href="">음식</a></li>
+                                    <li><a href="../food_sub4/food.html">음식</a></li>
                                     <li><a href="">숙박</a></li>
                                     <li><a href="">쇼핑</a></li>
                                 </ul>
@@ -140,7 +140,7 @@
                         </div>
                     </li>
   
-                    <li class="mainmenu-item"><a href="">여행도우미</a>
+                    <li class="mainmenu-item"><a href="../tripHelper_sub5/tripHelper.html">여행도우미</a>
                         <div class="submenu-list">
                             <!-- 여행도우미 -->
                             <div class="submenu-left-img">
@@ -148,7 +148,7 @@
                             </div>
                             <div class="ul-wrapper">
                                 <ul>
-                                    <li><a href="">교통정보</a></li>
+                                    <li><a href="../tripHelper_sub5/travel.html">교통정보</a></li>
                                     <li><a href="">문화관광 해설사</a></li>
                                     <li><a href="">관광안내지도</a></li>
                                     <li><a href="">공중화장실</a></li>
@@ -196,10 +196,9 @@
             </section>
 
             <section class="table-section">
-                <form action="" id="signup-form">
+                <form action="/join" id="signup-form">
                     <table>
                         <!-- 아이디 -->
-                        <!-- input에 타이틀 -->
                         <tr>
                             <th>
                                 <label for="id">
@@ -208,7 +207,7 @@
                             <td class="inputbox userid">
                                 <input type="text" name="userid" id="id">
                                 <button type="button" class="btn-primary">중복확인</button>
-                                <span class="warn">한글, 특수문자를 제외한 4~20자까지의 영문과 숫자로 입력해주세요.</span>
+                                <span class="warn"></span>
                             </td>
                         </tr>
 
@@ -218,9 +217,15 @@
                                 <label for="pw">
                                     <span class="marking">*</span>비밀번호</label>
                             </th>
-                            <td class="inputbox userpw">
-                                <input type="password" name="pw" id="pw">
-                                <span class="warn">비밀번호는 4~12자 사이의 영문과 숫자 조합 형태로 입력해 주세요.</span>
+                            <td class="inputbox ">
+                                <div class="userpw">
+                                    <input type="password" name="pw" id="pw">
+                                    <span class="warn pw-warn"></span>
+                                    <!-- 안전 or 사용불가 텍스트 -->
+                                    <span class="pw-text"></span>
+                                    <!-- 자물쇠 이미지 -->
+                                    <img src="images/signup/m_icon_pw_step_01.png" alt="비밀번호 아이콘" class="pw-img">
+                                </div>
                             </td>
                         </tr>
 
@@ -230,8 +235,15 @@
                                 <label for="pw-chk">
                                     <span class="marking">*</span>비밀번호확인</label>
                             </th>
-                            <td class="inputbox userpw-chk">
-                                <input type="password" name="pw-chk" id="pw-chk">
+                            <td class="inputbox">
+                                <div class="userpw-chk">
+                                    <input type="password" name="pw-chk" id="pw-chk">
+                                    <span class="warn pw-warn"></span>
+                                    <!-- 안전 or 사용불가 텍스트 -->
+                                    <span class="pw-text"></span>
+                                    <!-- 자물쇠 이미지 -->
+                                    <img src="images/signup/m_icon_pw_step_01.png" alt="비밀번호 아이콘" class="pw-img">
+                                </div>
                             </td>
                         </tr>
 
@@ -243,6 +255,8 @@
                             </th>
                             <td class="inputbox username">
                                 <input type="text" name="name" id="name">
+                                <span class="warn"></span>
+
                             </td>
                         </tr>
 
@@ -290,19 +304,19 @@
                                 <label for="phonenum1">
                                     <span class="marking">*</span>연락처</label>
                             </th>
-                            <td class="inputbox phonenum">
-                                <select name="phonenum1" id="phonenum1">
-                                    <option value="010">010</option>
-                                    <option value="011">011</option>
-                                    <option value="016">016</option>
-                                    <option value="017">017</option>
-                                    <option value="018">018</option>
-                                    <option value="019">019</option>
+                            <td class="inputbox phone">
+                                <select name="phonenum1" id="phonenum1" class="phone1" onchange="getPhone()">
+                                    <option name=" phonenum1" value="010">010</option>
+                                    <option name="phonenum1" value="011">011</option>
+                                    <option name="phonenum1" value="016">016</option>
+                                    <option name="phonenum1" value="017">017</option>
+                                    <option name="phonenum1" value="018">018</option>
+                                    <option name="phonenum1" value="019">019</option>
                                 </select>
                                 <span class="hyphen">-</span>
-                                <input type="text" name="phonenum2" maxlength="4">
+                                <input type="text" name="phonenum2" maxlength="4" class="phone2">
                                 <span class="hyphen">-</span>
-                                <input type="text" name="phonenum3" maxlength="4">
+                                <input type="text" name="phonenum3" maxlength="4" class="phone3">
                                 <span class="warn">해당 연락처는 아이디 비밀번호 찾기시 이용합니다.</span>
                             </td>
                         </tr>
@@ -330,10 +344,11 @@
 
                     <!-- 버튼 -->
                     <section class="buttons">
-                        <button type="button" id="submit">회원탈퇴</button>
-                        <button type="button" id="main">회원가입</button>
+                        <button type="button" id="main">회원탈퇴</button>
+                        <button type="button" id="submit">회원가입</button>
                     </section>
                 </form>
+
 
             </section>
         </main>
