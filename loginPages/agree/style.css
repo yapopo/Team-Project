@@ -170,7 +170,7 @@ header {
   position: relative;
   width: 482px;
   height: 500px;
-  background-image: url('../Project-images/header/gnb_obj2.png');
+  background-image: url('../../Project-images/header/gnb_obj2.png');
   background-repeat: no-repeat;
   background-size: cover;
   display: none;

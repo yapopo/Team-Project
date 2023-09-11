@@ -46,18 +46,25 @@ function updateData(){
                 latestData = item;
                 // console.log(latestData)
 
-                let dataItem = document.createElement('div');
-                dataItem.innerHTML =  '미세먼지 ' + item.pm10Value;
-                dataDisplay.appendChild(dataItem);
-                if(item.pm10Value <= 30) {
+                //미세먼지 농도별 예보 
+                if (item.pm10Value <= 30) {
                   item.pm10Value = '좋음'
-                }else if(item.pm10Value <= 80) {
+                  console.log=('좋음')
+                } else if (item.pm10Value <= 80) {
                   item.pm10Value = '보통'
-                }else if(item.pm10Value <= 150) {
+                  console.log=('보통')
+                }else if (item.pm10Value <= 150) {
                   item.pm10Value = '나쁨'
+                  console.log=('나쁨')
                 }else {
                   item.pm10Value = '매우나쁨'
+                  console.log=('매우나쁨')
                 };
+
+                let dataItem = document.createElement('div');
+                dataItem.innerHTML =  '미세먼지 ' + item.pm10Value;
+                // dataItem.innerHTML = item.cityName + '미세먼지 : ' + latestData.pm10Value + latestData.dataTime;
+                dataDisplay.appendChild(dataItem); 
               }
             }
           }

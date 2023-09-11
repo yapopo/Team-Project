@@ -170,7 +170,7 @@ header {
   position: relative;
   width: 482px;
   height: 500px;
-  background-image: url('../Project-images/header/gnb_obj2.png');
+  background-image: url('../../Project-images/header/gnb_obj2.png');
   background-repeat: no-repeat;
   background-size: cover;
   display: none;
@@ -449,157 +449,202 @@ main {
 
 /* 회원가입폼 */
 .table-section {
-    width: 100%;
-    /* border: 1px solid red; */
-    margin: 0 auto;
+  width: 100%;
+  /* border: 1px solid red; */
+  margin: 0 auto;
 }
 
 table {
-    width: 1240px;
-    border-top: 2px solid #444;
-    border-collapse: collapse;
+  width: 1240px;
+  border-top: 2px solid #444;
+  border-collapse: collapse;
 }
 
 th {
-    width: 249px;
-    height: 80px;
-    background-color: #F5F5F5;
-    border-right: 1px solid #EAECF1;
+  width: 249px;
+  height: 80px;
+  background-color: #F5F5F5;
+  border-right: 1px solid #EAECF1;
 }
 
 tr {
-    border-bottom: 1px solid #EAECF1;
+  border-bottom: 1px solid #EAECF1;
 }
 
-tr:last-child th {
-    height: 153px;
+tr:last-child th:not(.mail) {
+  height: 153px;
 }
 
 td {
-    padding-left: 16px;
+  padding-left: 16px;
 }
 
 label {
-    font-size: 17px;
-    color: #444;
+  font-size: 16px;
+  color: #444;
 }
 
 .marking {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-    color: #C52E17;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  color: #C52E17;
 }
 
 input[type="text"],
 input[type="password"],
 select {
-    width: 174px;
-    height: 32px;
-    border: 1px solid #ddd;
+  width: 174px;
+  height: 32px;
+  border: 1px solid #ddd;
 }
 
-main button {
-    color: #444;
-    width: 90px;
-    height: 32px;
-    font-weight: 500;
-    font-size: 13px;
-    margin-left: 10px;
-    border-radius: 30px;
-    background-color: #fff;
-    border: 1px solid #CDCDCD;
+input[type="text"],
+input[type="password"] {
+  padding: 5px;
 }
 
-.warn {
-    margin-left: 10px;
-    font-size: 13px;
-    font-weight: lighter;
-    color: #009B93;
+form button {
+  color: #444;
+  width: 90px;
+  height: 32px;
+  font-weight: 500;
+  font-size: 13px;
+  margin-left: 10px;
+  border-radius: 30px;
+  background-color: #fff;
+  border: 1px solid #CDCDCD;
 }
 
-.at {
-    margin: 0 3px;
+.userpw,
+.userpw-chk {
+  display: inline-flex;
+  align-items: center;
+}
+
+
+.pw-img {
+  width: 22px;
+  height: 22px;
+}
+
+/* .at {
+  margin: 0 3px;
 }
 
 select {
-    font-size: 14px;
+  font-size: 14px;
+} */
+
+.usermail input[type="text"] {
+  width: 310px;
 }
 
 .gender label {
-    cursor: pointer;
-    font-weight: lighter;
+  cursor: pointer;
+  font-weight: lighter;
 }
 
 input[type="radio"] {
-    width: 16px;
-    height: 16px;
-    margin : 0 3px 0 6px;
-    padding: 0;
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+  padding: 0;
 }
 
-.phonenum select,
-.phonenum input[type="text"] {
-    width: 88px;
-    padding: 0 5px;
+input[type="radio"]:not(:first-child) {
+  margin-left: 9px;
+}
+
+.phone select,
+.phone input[type="text"] {
+  width: 88px;
 }
 
 .hyphen {
-    margin: 0 4px;
+  margin: 0 4px;
 }
 
 .address input[type="text"] {
-    margin-bottom: 8px;
-    padding-left: 5px;
+  margin-bottom: 8px;
+  padding-left: 5px;
 }
 
 .addr-detail input[type="text"] {
-    width: 100%;
+  width: 100%;
 }
 
 #sample6_detailAddress {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 #sample6_extraAddress {
-    display: none;
+  display: none;
 }
+
+.text-red {
+  color: red;
+}
+
+.text-green {
+  color: #08a600;
+}
+
+.warn,
+.pw-text {
+  font-size: 13px;
+  font-weight: lighter;
+
+}
+
+.warn {
+  margin: 0 7px;
+}
+
+.pw-warn {
+  margin-left: 11px;
+}
+
+.pw-text {
+  margin-right: 5px;
+}
+
 
 /* 버튼 css */
 .buttons {
-    padding: 50px 0;
-    display: flex;
-    justify-content: center;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .buttons button {
-    width: 100px;
-    height: 45px;
-    cursor: pointer;
-    color: #fff;
-    border-radius: 30px;
-    margin: 0 10px;
-    font-size: 16px;
+  width: 100px;
+  height: 45px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 30px;
+  margin: 0 10px;
+  font-size: 16px;
 }
 
 #submit {
-    background-color: #2d2b2b;
-    transition: background-color 300ms ease-in-out;
+  background-color: #2d2b2b;
+  transition: background-color 300ms ease-in-out;
 }
 
 #submit:hover {
-    background-color: #535050;
+  background-color: #535050;
 }
 
 #main {
-    background-color: #76777E;
-    transition: all 300ms ease-in-out;
+  background-color: #76777E;
+  transition: all 300ms ease-in-out;
 }
 
 #main:hover {
-    background-color: #fff;
-    border: solid 1px #76777E;
-    color: #76777E;
+  background-color: #fff;
+  border: solid 1px #76777E;
+  color: #76777E;
 }
 
 /* footer css */
