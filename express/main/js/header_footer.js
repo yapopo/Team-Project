@@ -90,6 +90,13 @@ $(document).ready(function(){
   })
 });
 
+if($('.menu-buttons ul').find('.logout').length !== 0){
+  $('.menu-buttons ul').css({'min-width':'200px'})
+}else{
+  $('.menu-buttons ul').css({'min-width':'150px'})
+}
+
+
 
 // footer 스크립트
 

@@ -262,8 +262,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 200px;
+  min-width: 150px;
 }
+
 
 .login-name {
   font-size: 14px;

@@ -214,7 +214,7 @@ app.get('/main', function (requests, response) {
 })
 
 app.get('/logout', function (requests, response) {
-    response.redirect('/login');
+    response.redirect('/main');
 })
 
 
@@ -264,7 +264,7 @@ function getLogin(requests, response, next) {
 app.post('/logout', function (requests, response) {
     requests.session.destroy();
     console.log('로그아웃!')
-    response.redirect('/login');
+    response.redirect('/main');
 })
 
 
