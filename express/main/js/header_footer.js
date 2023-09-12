@@ -18,7 +18,7 @@ $('.mainmenu-item').hover(function () {
     $('.mainmenu-item>a').css('color', '#000');
     $('.mainmenu h1 span').css('color', '#000');
     $(".mainmenu h1 img").attr("src", "../Project-images/header/logo.png");
-    $(".menu-buttons a, i").css('color', '#000');
+    $(".menu-buttons div, a, i").css('color', '#000');
     $(".menu-buttons img").attr("src", "../Project-images/header/home-black2.png");
     $(".submenu-list").css("border-top","1px solid #bbb")
     $(this).find(".ul-wrapper").stop().fadeIn(1000);
@@ -34,7 +34,7 @@ $('.mainmenu-item').hover(function () {
     $('.mainmenu-item>a').css('color', '#fff');
     $('.mainmenu h1 span').css('color', '#fff');
     $(".mainmenu h1 img").attr("src", "../Project-images/header/white-logo.png");
-    $(".menu-buttons a, i").css('color', '#fff');
+    $(".menu-buttons div, a, i").css('color', '#fff');
     $(".menu-buttons img").attr("src", "../Project-images/header/home-white.png");
     $(this).find(".ul-wrapper").stop().fadeOut(500);
     $(this).find(".submenu-left-img").stop().fadeOut(500);
