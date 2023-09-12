@@ -40,9 +40,15 @@ app.get('/map', function (requests, response) {
 })
 
 // main
-app.get('/main', function (requests, response) {
+// app.get('/main', function (requests, response) {
+//     response.render('main.ejs')
+// })
+/*
+app.get('/main', getLogin, function (requests, response) {
     response.render('main.ejs')
 })
+*/
+
 
 // 약관동의
 app.get('/agree', function (requests, response) {
@@ -79,7 +85,7 @@ MongoClient.connect('mongodb+srv://admin:qewr1324@cluster0.yb4lr5p.mongodb.net/?
     }
 
     db = client.db('data')
-    app.listen('7080', function () {
+    app.listen('8080', function () {
         console.log('success')
     })
 })
@@ -201,6 +207,55 @@ passport.deserializeUser(function (id, done) {
         done(null, result)
     })
 })
+
+
+app.get('/main', function (requests, response) {
+    response.render('main.ejs', { info: requests.user })
+})
+
+app.get('/logout', function (requests, response) {
+    response.redirect('/login');
+})
+
+
+
+/*************************↓↓↓ 수정필요 ↓↓↓*************************/
+
+
+// 로그인 시 닉네임 뜨게
+app.get('/info/:name', function (requests, response) {
+
+
+    db.collection('gyeongju_join').findOne({ _id: parseInt(requests.params.id) }, function (error, result) {
+        // console.log(result)
+        response.render('info.ejs', { data: result })
+
+    })
+})
+
+// 로그인 여부를 판단하는 미들웨어
+function getLogin(requests, response, next) {
+    if (requests.user) {
+        response.render('main.ejs', { info: requests.user })
+        console.log('requests.user ' + requests.user);
+        next()
+    }
+    else {
+        response.render('main.ejs')
+    }
+}
+
+app.post('/logout', function (requests, response) {
+    requests.session.destroy();
+    console.log('로그아웃!')
+    response.redirect('/login');
+})
+
+
+/*************************↑↑↑ 수정필요 ↑↑↑*************************/
+
+
+
 
 
 /*******************
