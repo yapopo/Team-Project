@@ -2,8 +2,8 @@
 const express = require('express');
 const app = express();
 
-app.listen(7000, function () {
-    console.log('7000번 포트')
+app.listen(8080, function () {
+    console.log('8080번 포트')
 })
 
 // 폴더 내 모든 정적파일 제공(js, css, images, fonts)
@@ -85,7 +85,7 @@ MongoClient.connect('mongodb+srv://admin:qewr1324@cluster0.yb4lr5p.mongodb.net/?
     }
 
     db = client.db('data')
-    app.listen('7080', function () {
+    app.listen('8080', function () {
         console.log('success')
     })
 })
